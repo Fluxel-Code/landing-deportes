@@ -11,6 +11,10 @@
     background-image: linear-gradient(120deg, #ffbb00, 60%, #fe951d 40%);
 }
 
+.bg-linear-gradient-yellow-revers {
+    background-image: linear-gradient(120deg, #ffbb00, 25%, #ece2e2 10%);
+}
+
 .skew {
     transform: skew(-40deg);
 }

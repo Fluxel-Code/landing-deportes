@@ -596,12 +596,20 @@ video {
   margin-top: 7rem;
 }
 
-.mr-3 {
-  margin-right: 0.75rem;
-}
-
 .mr-2 {
   margin-right: 0.5rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .block {
@@ -632,12 +640,12 @@ video {
   height: 15rem;
 }
 
-.h-4 {
-  height: 1rem;
-}
-
 .h-7 {
   height: 1.75rem;
+}
+
+.h-16 {
+  height: 4rem;
 }
 
 .w-full {
@@ -660,6 +668,14 @@ video {
   width: 50%;
 }
 
+.w-60 {
+  width: 15rem;
+}
+
+.w-16 {
+  width: 4rem;
+}
+
 .rotate-\[268deg\] {
   --tw-rotate: 268deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -676,6 +692,10 @@ video {
 .columns-2 {
   -moz-columns: 2;
        columns: 2;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -706,10 +726,6 @@ video {
   gap: 2.75rem;
 }
 
-.gap-5 {
-  gap: 1.25rem;
-}
-
 .gap-7 {
   gap: 1.75rem;
 }
@@ -732,6 +748,11 @@ video {
 
 .border-none {
   border-style: none;
+}
+
+.bg-slate-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
 
 .bg-orange-100 {
@@ -764,9 +785,9 @@ video {
   background-color: rgb(91 33 182 / var(--tw-bg-opacity));
 }
 
-.bg-slate-300 {
+.bg-\[\#ffbb00\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+  background-color: rgb(255 187 0 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -783,10 +804,6 @@ video {
   padding: 0.5rem;
 }
 
-.p-3 {
-  padding: 0.75rem;
-}
-
 .p-4 {
   padding: 1rem;
 }
@@ -796,19 +813,14 @@ video {
   padding-right: 1.5rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pl-4 {
@@ -927,6 +939,12 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .bg-linear-gradient-grey {
   background-image: linear-gradient(281deg, #ebebeb 0 33%, transparent 32px 0%), linear-gradient(101deg, #ebebeb 0 25px, transparent 5% 0%);
 }
@@ -934,6 +952,10 @@ video {
 .bg-linear-gradient-yellow {
   /* background-image: linear-gradient(120deg, #ffde3b, 73%, #ffbb00 31%); */
   background-image: linear-gradient(120deg, #ffbb00, 60%, #fe951d 40%);
+}
+
+.bg-linear-gradient-yellow-revers {
+  background-image: linear-gradient(120deg, #ffbb00, 25%, #ece2e2 10%);
 }
 
 .skew {
@@ -981,29 +1003,73 @@ video {
   border-color: rgb(250 204 21 / var(--tw-border-opacity));
 }
 
+.hover\:bg-\[\#ffa200\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 162 0 / var(--tw-bg-opacity));
+}
+
 .focus\:shadow:focus {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.focus\:shadow-\[\#ffa200\]:focus {
+  --tw-shadow-color: #ffa200;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.focus\:outline:focus {
+  outline-style: solid;
+}
+
 .focus\:outline-0:focus {
   outline-width: 0px;
 }
 
+.focus\:outline-\[\#ffbb00\]:focus {
+  outline-color: #ffbb00;
+}
+
 @media (min-width: 768px) {
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .md\:block {
     display: block;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .md\:gap-3 {
+    gap: 0.75rem;
   }
 }
 
 @media (min-width: 1024px) {
+  .lg\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .lg\:mt-0 {
     margin-top: 0px;
   }
 
   .lg\:mt-6 {
     margin-top: 1.5rem;
+  }
+
+  .lg\:block {
+    display: block;
   }
 
   .lg\:flex {
@@ -1028,6 +1094,10 @@ video {
 
   .lg\:grid-cols-\[100px_1fr_350px\] {
     grid-template-columns: 100px 1fr 350px;
+  }
+
+  .lg\:grid-cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
@@ -1081,6 +1151,11 @@ video {
   .lg\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  .lg\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
   .lg\:pl-10 {
