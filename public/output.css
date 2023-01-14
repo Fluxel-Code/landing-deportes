@@ -1403,6 +1403,10 @@ video {
     gap: 0.25rem;
   }
 
+  .md\:gap-5 {
+    gap: 1.25rem;
+  }
+
   .md\:object-cover {
     -o-object-fit: cover;
        object-fit: cover;
@@ -1542,6 +1546,10 @@ video {
 
   .lg\:gap-12 {
     gap: 3rem;
+  }
+
+  .lg\:gap-4 {
+    gap: 1rem;
   }
 
   .lg\:object-cover {
