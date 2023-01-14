@@ -15,49 +15,62 @@
 
 </head>
 
-<body class="bg-slate-300">
-    <main>
-        <!-- sobre nosotros -->
-        <section class="container px-6 lg:px-4 mx-auto mt-12">
-            <div class="lg:flex lg:items-center">
-                <div class="columns-2 lg:w-2/4">
-                    <div class="mb-4 mt-8 lg:px-2 lg:py-2">
-                        <img src="./assets/1sobrenosotros.jpg" alt="partido de basket" class="w-full rounded-lg">
-                    </div>
-                    <div class="mb-4 pl-4 lg:px-2 lg:py-2">
-                        <img src="./assets/3sobrenosotros.jpg" alt="la vinotinto" class="w-full rounded-lg">
-                    </div>
-                    <div class="mb-4 lg:px-2 lg:py-2">
-                        <img src="./assets/2sobrenosotros.jpg" alt="cancha de atletismo y la bandera de Venezuela"
-                            class="w-full rounded-lg">
-                    </div>
-                    <div class="mb-4 lg:px-2 lg:py-2">
-                        <img src="./assets/4sobrenosotros.jpg" alt="alzando la bandera de Venezuela"
-                            class="w-full rounded-lg">
+<body>
+    <main class="bg-[#F7F7F7]">
+
+        <!-- !sobre nosotros solo faltan las rayas -->
+        <section class="container px-6 lg:px-4 mx-auto pt-28">
+            <div class="lg:flex ">
+                <div class="lg:w-2/4">
+                    <div class="grid grid-rows-2 grid-flow-col gap-7">
+                        <div class=" md:h-80">
+                            <img src="./assets/1sobrenosotros.jpg" alt="partido de basket"
+                                class="w-full rounded-xl h-full object-cover">
+                        </div>
+
+                        <div class="pl-14 pb-14">
+                            <img src="./assets/3sobrenosotros.jpg" alt="la vinotinto"
+                                class="w-full rounded-xl object-cover">
+                        </div>
+
+                        <div class="md:-translate-y-10 md:pr-8">
+                            <img src="./assets/2sobrenosotros.jpg" alt="cancha de atletismo y la bandera de Venezuela"
+                                class="w-full rounded-xl h-full md:h-52 object-cover">
+                        </div>
+
+                        <div class="md:-translate-y-36">
+                            <img src="./assets/4sobrenosotros.jpg" alt="alzando la bandera de Venezuela"
+                                class="w-full rounded-xl h-full">
+                        </div>
                     </div>
                 </div>
 
                 <div class="mt-12 lg:mt-0 lg:w-2/4 lg:pl-10">
-                    <h6 class="uppercase tracking-widest text-orange-500 mb-4 text-lg">SOBRE NOSOTROS</h6>
+                    <h6 class="uppercase tracking-widest text-orange-500 mb-4 text-lg text-center md:text-left">SOBRE
+                        NOSOTROS
+                    </h6>
 
-                    <h1 class="capitalize text-5xl text-slate-800 mb-12">Atletas de venezuela</h1>
+                    <h1 class="capitalize text-5xl text-slate-800 mb-12 text-center md:text-left">Atletas de venezuela
+                    </h1>
 
-                    <ul class="list-none mb-9 lg:pr-14 xl:pr-20">
-                        <li class="mb-4 flex items-center gap-5">
-                            <div class="">
-                                <div class="bg-orange-100 rounded-full p-2">
-                                    <img src="./assets/icon down.svg" alt="flecha hacia la derecha"
-                                        class="rotate-[268deg] w-5">
+                    <ul class="list-none mb-12 lg:pr-14 xl:pr-20">
+                        <li class="mb-7 flex items-center gap-5">
+                            <div
+                                class="rotate-[268deg] bg-orange-200 rounded-full w-6 h-6 flex justify-center items-center p-2">
+                                <div class="">
+                                    <i class="fa fa-chevron-down  text-black"></i>
                                 </div>
                             </div>
                             <p>El portal Atletas de Venezuela permite realizar el registro
                                 para el análisis de datos del sector deportivo.</p>
                         </li>
 
-                        <li class="mb-4 flex items-center gap-5">
-                            <div class="bg-orange-100 rounded-full p-2">
-                                <img src="./assets/icon down.svg" alt="flecha hacia la derecha"
-                                    class="rotate-[268deg] w-5">
+                        <li class="mb-7 flex items-center gap-5">
+                            <div
+                                class="rotate-[268deg] bg-orange-200 rounded-full w-6 h-6 flex justify-center items-center p-2">
+                                <div class="">
+                                    <i class="fa fa-chevron-down  text-black"></i>
+                                </div>
                             </div>
                             <p>Gracias al tratamiento de grandes volúmenes de
                                 información que manejamos, de nuestros atletas,
@@ -65,10 +78,12 @@
                                 mejorar la toma de decisiones en terrenos deportivos.</p>
                         </li>
 
-                        <li class="mb-4 flex items-center gap-5">
-                            <div class="bg-orange-100 rounded-full p-2">
-                                <img src="./assets/icon down.svg" alt="flecha hacia la derecha"
-                                    class="rotate-[268deg] w-5">
+                        <li class="mb-7 flex items-center gap-5">
+                            <div
+                                class="rotate-[268deg] bg-orange-200 rounded-full w-6 h-6 flex justify-center items-center p-2">
+                                <div class="">
+                                    <i class="fa fa-chevron-down  text-black"></i>
+                                </div>
                             </div>
                             <p>Te invitamos estimado atleta a que te registres o
                                 actualices tus datos para que seas parte de la gran
@@ -76,7 +91,11 @@
                         </li>
                     </ul>
 
-                    <a href="#" class="uppercase bg-[#F26F63] p-2 rounded-md text-white">registrarse</a>
+                    <div class="pl-10">
+                        <a href="#" class="uppercase  bg-[#F26F63] transition-colors focus:shadow-[#bd5e56]
+                         hover:bg-[#bd5e56] px-4 py-3 rounded-md text-white tracking-wide">registrarse
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -84,7 +103,7 @@
 
         <!-- calendario -->
         <!-- !acomodar -->
-        <section class="container px-6 lg:px-5 mx-auto mt-14">
+        <section class="container px-6 lg:px-5 mx-auto mt-14 lg:mt-0">
             <center class="lg:px-2">
                 <h2 class="capitalize text-5xl text-slate-800 mb-4">calendario 2022/23</h2>
                 <h6 class="text-3xl text-slate-800 mb-6">Filtro según deporte</h6>
@@ -194,35 +213,42 @@
 
             <h2 class="text-5xl text-slate-800 mb-10 text-center">Galería de imágenes</h2>
 
-            <div class="flex mt-8 lg:px-2">
-                <div class="w-full pr-2 lg:w-1/2 lg:pr-3 ">
-                    <div class="">
+            <div class="md:flex md:flex-wrap">
+                <div class="md:w-1/2 md:pr-4">
+                    <div class="mb-6 ">
                         <img src="./assets/1galeria.jpg" alt="juego de basket"
-                            class="h-64 w-full object-cover object-top ">
+                            class="h-full md:h-60 md:w-full lg:object-cover lg:object-top">
                     </div>
 
-                    <div class="flex mt-4 lg:mt-6">
-                        <div class="w-1/2 pr-2 lg:pr-3">
-                            <img src="./assets/2galeria.jpg" alt="atletismo" class="h-60 w-full object-cover">
+
+                    <div class="md:flex md:gap-4">
+                        <div class="mb-6 md:mb-0 lg:pr-2">
+                            <img src="./assets/2galeria.jpg" alt="atletismo"
+                                class="h-full md:h-60 md:w-full md:object-cover">
                         </div>
-                        <div class="w-1/2 pl-2 lg:pl-3">
-                            <img src="./assets/3galeria.jpg" alt="equio de basket" class="h-60 w-full object-cover">
+
+                        <div class="mb-6 md:mb-0 lg:pl-2 ">
+                            <img src="./assets/3galeria.jpg" alt="equio de basket"
+                                class="h-full md:h-60 md:w-full md:object-cover">
                         </div>
                     </div>
                 </div>
 
-                <div class="w-full pl-2 lg:flex lg:w-1/2 lg:pl-3 ">
-                    <div class="lg:w-1/2 lg:pr-3">
-                        <img src="./assets/4galeria.jpg" alt="foto de yulimar rojas" class="lg:object-cover lg:h-full">
+                <div class="md:w-1/2 md:pl-4 lg:flex">
+                    <div class="mb-6 lg:mb-0 lg:w-full lg:pr-4 ">
+                        <img src="./assets/4galeria.jpg" alt="foto de yulimar rojas"
+                            class="lg:h-full lg:object-center h-full md:h-60 md:w-full lg:object-cover">
                     </div>
 
-                    <div class="mt-4 lg:mt-0 lg:flex-col lg:justify-between lg:h-full lg:w-1/2 flex lg:pl-3">
-                        <div class="w-1/2 pr-2 lg:w-full lg:pr-0">
-                            <img src="./assets/5galeria.jpg" alt="natacion" class="h-64 w-full object-cover">
+                    <div class="md:flex md:gap-4 lg:pl-4 lg:flex-col lg:w-full lg:justify-between">
+                        <div class="mb-6 md:mb-0">
+                            <img src="./assets/5galeria.jpg" alt="natacion"
+                                class="h-full md:h-60 md:w-full md:object-cover">
                         </div>
 
-                        <div class="w-1/2 pl-2 lg:w-full lg:mt-6 lg:pl-0">
-                            <img src="./assets/6galeria.jpg" alt="celebracion" class="h-64 w-full object-cover">
+                        <div>
+                            <img src="./assets/6galeria.jpg" alt="celebracion"
+                                class="h-full md:h-60 md:w-full md:object-cover">
                         </div>
                     </div>
                 </div>
@@ -308,7 +334,7 @@
 
                         <div
                             class="w-full mt-6 bg-[#ffbb00] transition-colors focus:shadow-[#ffa200] text-center hover:bg-[#ffa200] rounded-lg p-2 focus:outline focus:outline-[#ffbb00] cursor-pointer">
-                            <a href="#" class="uppercase  text-[#495057]">enviar</a>
+                            <a href="#" class="uppercase tracking-wide text-[#495057]">enviar</a>
                         </div>
                     </form>
                 </div>
