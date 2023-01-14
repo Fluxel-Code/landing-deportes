@@ -15,7 +15,7 @@
 
 </head>
 
-<body class="bg-[#f5f1f1dd]">
+<body class="bg-slate-300">
     <main>
         <!-- sobre nosotros -->
         <section class="container px-6 lg:px-4 mx-auto mt-12">
@@ -83,6 +83,7 @@
 
 
         <!-- calendario -->
+        <!-- !acomodar -->
         <section class="container px-6 lg:px-5 mx-auto mt-12">
             <center class="lg:px-2">
                 <h2 class="capitalize text-4xl text-slate-800 mb-4">calendario 2022/23</h2>
@@ -97,12 +98,57 @@
                     <li class="font-semibold text-zinc-700">Natación</li>
                 </ul>
 
-                <div class="shadow-md">
+                <div class="shadow-md grid lg:grid-cols-[100px_1fr_350px]">
+
+                    <div class="bg-[#ebebeb] hidden md:block">
+                        <div class="flex justify-center items-center h-full">
+                            <div class="">
+                                <img src="./assets/icon down.svg" alt="flecha hacia bajo" class="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" flex flex-col lg:flex-row items-center py-3 justify-between">
+                        <div class="">
+                            <div class="w-12 mb-2">
+                                <img src="./assets/carabobo-fc-1.png"
+                                    alt="escudo del equipo de futbol del estado carabobo" class="w-full">
+                            </div>
+
+                            <p class="text-black text-sm uppercase">carabobo fc</p>
+                        </div>
+
+                        <p class="text-black">VS</p>
+
+                        <div class="">
+                            <div class="w-14 mb-2">
+                                <img src="./assets/Portuguesa.png" alt="escudo del equipo de futbol del estado carabobo"
+                                    class="w-full">
+                            </div>
+
+                            <p class="text-black text-sm uppercase">portuguesa fc</p>
+                        </div>
+
+                        <div class="">
+                            <p class="uppercase text-xs font-semibold">copa nacional - clasificatoria</p>
+                            <p class="uppercase text-lg font-semibold">25 agosto 2022 / 7:30pm</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#ebebeb] flex flex-col items-center">
+                        <p class="uppercase text-xs font-semibold">lugar</p>
+                        <p class="text-lg font-semibold">Estadio Olímpico de la UCV</p>
+                    </div>
+
+                    <!-- .backgraund{
+                    linear-gradient(281deg, #ebebeb 0 30px, transparent 32px 0%), linear-gradient(101deg, #ebebeb 0
+                    25px, transparent 5% 0%)
+                    } -->
+                    <!-- <div class="shadow-md">
 
                     <div
                         class="rounded-lg flex flex-col lg:flex-row lg:gap-8 justify-between items-center bg-linear-gradient-grey- py-3- px-4-">
                         <div class="hidden lg:flex h-full bg-white">
-                            <img src="./assets/icon down.svg" alt="flecha hacia bajo" class="w-full">
                         </div>
 
 
@@ -139,7 +185,7 @@
                         </div>
                     </div>
 
-                </div>
+                </div> -->
             </center>
         </section>
 
@@ -205,11 +251,59 @@
 
                 <div class="lg:w-1/2">
                     <form action="">
-                        <div class="">
-                            <label for="name" class="cursor-pointer text-[#6a7075] block mb-4">Nombre</label>
-                            <input type="text" name="name" id="name"
-                                class="block w-full text-[#495057] border-0 border-none borde-[#ced4da] bg-white focus:shadow focus:outline-0">
+                        <div class="flex gap-7">
+                            <div class="mb-6 w-1/2">
+                                <label for="name" class="cursor-pointer text-[#6a7075] block">Nombre</label>
+                                <input type="text" name="nombre" id="name"
+                                    class="block w-full h-7 p-4
+                                     text-[#495057] border-0 border-none borde-[#ced4da] bg-white focus:shadow focus:outline-0">
+                            </div>
+
+                            <div class="mb-6 w-1/2">
+                                <label for="surname" class="cursor-pointer text-[#6a7075] block">Apellido</label>
+                                <input type="text" name="apellido" id="surname"
+                                    class="block w-full h-7 p-4 text-[#495057] border-0 border-none borde-[#ced4da] bg-white focus:shadow focus:outline-0">
+                            </div>
                         </div>
+
+                        <div class="flex gap-7">
+                            <div class="w-1/2 mb-6">
+                                <label for="emails" class="cursor-pointer text-[#6a7075] block">Correo
+                                    electrónico</label>
+                                <input type="email" name="Correo electronico" id="emails"
+                                    class="block w-full h-7 p-4 text-[#495057] border-0 border-none borde-[#ced4da] bg-white focus:shadow focus:outline-0">
+                            </div>
+
+                            <div class="w-1/2 mb-6">
+                                <label for="phone" class="cursor-pointer text-[#6a7075] block">Teléfono</label>
+                                <input type="tel" name="telefono" id="phone"
+                                    class="block w-full h-7 p-4 text-[#495057] border-0 border-none borde-[#ced4da] bg-white focus:shadow focus:outline-0">
+                            </div>
+                        </div>
+
+                        <div class="mb-6 w-1/2 pr-3">
+                            <label for="business" class="cursor-pointer text-[#6a7075] block">Asunto</label>
+                            <input type="text" name="asunto" id="business"
+                                class="block w-full h-7 p-4 text-[#495057] border-0 border-none borde-[#ced4da] bg-white focus:shadow focus:outline-0">
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="messenge" class="cursor-pointer text-[#6a7075] block">Tu mensaje
+                                <textarea name="mensaje" id="messenge" rows="3"
+                                    class="block w-full p-4 text-[#495057] border-0 border-none borde-[#ced4da] bg-white focus:shadow focus:outline-0"></textarea>
+                            </label>
+                        </div>
+
+                        <p class="text-[#495057] mb-6">
+                            Utilizamos sus datos exclusivamente para propósitos relacionados con el procesamiento y
+                            repuesta de su consulta.
+                        </p>
+
+                        <label class="text-[#495057] text-sm">
+                            <input type="checkbox" id="cbox1" value="first_checkbox" class="mr-2">He leído
+                            la política de
+                            privacidad, incluidas todas las informaciones referentes al manejo de datos personales.
+                        </label><br>
                     </form>
                 </div>
             </div>
