@@ -431,9 +431,9 @@
         <section class="container px-10 lg:px-5- mx-auto mt-14 lg:mt-0">
             <center class="lg:px-2">
                 <h2 class="capitalize text-5xl text-slate-800 mb-4">calendario 2022/23</h2>
-                <h6 class="text-3xl text-slate-800 mb-6">Filtro según deporte</h6>
+                <h6 class="text-3xl text-slate-800 mb-10">Filtro según deporte</h6>
 
-                <ul class="list-none flex justify-between lg:justify-start gap-6 mb-16">
+                <ul class="list-none text-lg flex justify-between lg:justify-start gap-6 mb-8">
                     <li class="font-semibold text-zinc-700">Basket</li>
                     <li
                         class="font-semibold text-zinc-700 relative before:absolute before:border-b-4 before:border-yellow-400 before:w-full  before:h-3  before:bottom-[-5px] before:right-0">
@@ -442,94 +442,246 @@
                     <li class="font-semibold text-zinc-700">Natación</li>
                 </ul>
 
-                <div class="shadow-md grid lg:grid-cols-[100px_1fr_280px]">
-
-                    <div class="bg-[#ebebeb]">
-                        <div class="flex justify-center items-center h-full">
-                            <div class="">
-                                <img src="./assets/icon down.svg" alt="flecha hacia bajo" class="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=" flex- flex-col- hidden lg:flex lg:flex-row items-center py-3 justify-between">
+                <!-- 01 -->
+                <div class="bg-[#ebebeb] mb-12 shadow-md grid md:grid-cols-[80px_1fr_200px]">
+                    <a class="flex justify-center md:items-center py-4 lg:py-0 lg:pl-3" href="#" id="seccion_01">
                         <div class="">
-                            <div class="w-12 mb-2">
-                                <img src="./assets/carabobo-fc-1.png"
-                                    alt="escudo del equipo de futbol del estado carabobo" class="w-full">
-                            </div>
-
-                            <p class="text-black text-xs uppercase">carabobo fc</p>
+                            <img src="./assets/icon down.svg" alt="flecha hacia bajo" class="">
                         </div>
+                    </a>
 
-                        <p class="text-black">VS</p>
+                    <!-- !realizar el boton para que aparezca en movil -->
 
-                        <div class="">
-                            <div class="w-14 mb-2">
-                                <img src="./assets/Portuguesa.png" alt="escudo del equipo de futbol del estado carabobo"
-                                    class="w-full">
-                            </div>
+                    <div class="pt-8 bg-white md:py-4 bg-calendar hidden md:block">
+                        <div class="md:flex md:px-4 md:items-center lg:justify-evenly lg:px-0">
+                            <div class="flex justify-center items-center gap-5">
+                                <div class="">
+                                    <div class="w-12 mb-2 md:w-10 lg:w-12">
+                                        <img src="./assets/carabobo-fc-1.png"
+                                            alt="escudo del equipo de futbol del estado carabobo" class="w-full">
+                                    </div>
 
-                            <p class="text-black text-xs uppercase">portuguesa fc</p>
-                        </div>
-
-                        <div class="">
-                            <p class="uppercase text-sm font-semibold">copa nacional - clasificatoria</p>
-                            <p class="uppercase text-lg font-semibold">25 agosto 2022 / 7:30pm</p>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#ebebeb] hidden lg:flex lg:flex-col lg:items-center lg:justify-center">
-                        <p class="uppercase text-xs font-semibold">lugar</p>
-                        <p class="text-lg font-semibold">Estadio Olímpico de la UCV</p>
-                    </div>
-
-                    <!-- .backgraund{
-                    linear-gradient(281deg, #ebebeb 0 30px, transparent 32px 0%), linear-gradient(101deg, #ebebeb 0
-                    25px, transparent 5% 0%)
-                    } -->
-                    <!-- <div class="shadow-md">
-
-                    <div
-                        class="rounded-lg flex flex-col lg:flex-row lg:gap-8 justify-between items-center bg-linear-gradient-grey- py-3- px-4-">
-                        <div class="hidden lg:flex h-full bg-white">
-                        </div>
-
-
-                        <div class="bg-red-300 flex flex-col lg:flex-row items-center gap-6 lg:gap-12">
-                            <div class="">
-                                <div class="w-12 mb-2">
-                                    <img src="./assets/carabobo-fc-1.png"
-                                        alt="escudo del equipo de futbol del estado carabobo" class="w-full">
+                                    <p class="text-[#495057] text-xs uppercase">carabobo fc</p>
                                 </div>
 
-                                <p class="text-black text-sm uppercase">carabobo fc</p>
-                            </div>
+                                <p class="text-[#495057]">VS</p>
 
-                            <p class="text-black">VS</p>
+                                <div class="">
+                                    <div class="w-16 mb-2 md:w-14 lg:w-16">
+                                        <img src="./assets/Portuguesa.png"
+                                            alt="escudo del equipo de Portuguesa carabobo" class="w-full">
+                                    </div>
 
-                            <div class="">
-                                <div class="w-14 mb-2">
-                                    <img src="./assets/Portuguesa.png"
-                                        alt="escudo del equipo de futbol del estado carabobo" class="w-full">
+                                    <p class="text-[#495057] text-xs uppercase">portuguesa fc</p>
                                 </div>
-
-                                <p class="text-black text-sm uppercase">portuguesa fc</p>
                             </div>
 
-                            <div class="">
-                                <p class="uppercase text-xs font-semibold">copa nacional - clasificatoria</p>
-                                <p class="uppercase text-lg font-semibold">25 agosto 2022 / 7:30pm</p>
+                            <div class="mt-7 md:mt-0">
+                                <p class="uppercase text-sm font-semibold text-[#495057] md:text-xs lg:text-sm">copa
+                                    nacional -
+                                    clasificatoria
+                                </p>
+                                <p class="uppercase text-xl font-semibold text-[#495057] md:text-base lg:text-xl">25
+                                    agosto 2022 /
+                                    7:30pm</p>
                             </div>
                         </div>
 
-                        <div class="bg-violet-800 flex flex-col items-center gap-11">
-                            <p class="uppercase text-xs font-semibold">lugar</p>
-                            <p class="text-lg font-semibold">Estadio Olímpico de la UCV</p>
+                        <div class="bg-[#ebebeb] mt-5 md:hidden">
+                            <div class="py-5">
+                                <p class="uppercase text-xs font-semibold text-[#495057] mb-2">lugar</p>
+                                <p class="text-lg font-semibold text-[#495057] leading-5">Estadio Olímpico de la UCV</p>
+                            </div>
                         </div>
                     </div>
 
-                </div> -->
+                    <div class="py-5 hidden md:block lg:pr-4">
+                        <p class="uppercase text-xs font-semibold text-[#495057] mb-2">lugar</p>
+                        <p class="text-lg font-semibold text-[#495057] leading-5">Estadio Olímpico de la UCV</p>
+                    </div>
+                </div>
+
+                <!-- 02 -->
+                <div class="bg-[#ebebeb] mb-12 shadow-md grid md:grid-cols-[80px_1fr_230px]">
+                    <a class="flex justify-center md:items-center py-4 lg:py-0 lg:pl-3" href="#" id="seccion_02">
+                        <div class="">
+                            <img src="./assets/icon down.svg" alt="flecha hacia bajo" class="">
+                        </div>
+                    </a>
+
+                    <!-- !realizar el boton para que aparezca en movil -->
+
+                    <div class="pt-8 bg-white md:py-4 bg-calendar hidden md:block">
+                        <div class="md:flex md:px-4 md:items-center lg:justify-evenly lg:px-0">
+                            <div class="flex justify-center items-center gap-5">
+                                <div class="">
+                                    <div class="w-12 mb-2 md:w-10 lg:w-12">
+                                        <img src="./assets/Monagas.png" alt="escudo del equipo de Monagas"
+                                            class="w-full">
+                                    </div>
+
+                                    <p class="text-[#495057] text-xs uppercase">Monagas sc</p>
+                                </div>
+
+                                <p class="text-[#495057]">VS</p>
+
+                                <div class="">
+                                    <div class="w-12 mb-2 md:w-10 lg:w-12">
+                                        <img src="./assets/carabobo-fc-1.png" alt="escudo del equipo de Caracas"
+                                            class="w-full">
+                                    </div>
+
+                                    <p class="text-[#495057] text-xs uppercase">Caracas fc</p>
+                                </div>
+                            </div>
+
+                            <div class="mt-7 md:mt-0">
+                                <p class="uppercase text-sm font-semibold text-[#495057] md:text-xs lg:text-sm">copa
+                                    nacional -
+                                    clasificatoria
+                                </p>
+                                <p class="uppercase text-xl font-semibold text-[#495057] md:text-base lg:text-xl">27
+                                    agosto 2022 /
+                                    5:30pm</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-[#ebebeb] mt-5 md:hidden">
+                            <div class="py-5">
+                                <p class="uppercase text-xs font-semibold text-[#495057] mb-2">lugar</p>
+                                <p class="text-lg font-semibold text-[#495057] leading-5">Estadio de Fútbol
+                                    Metropolitano de
+                                    Caracas</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-5 hidden md:block lg:pr-4">
+                        <p class="uppercase text-xs font-semibold text-[#495057] mb-2">lugar</p>
+                        <p class="text-lg font-semibold text-[#495057] leading-5">Estadio de Fútbol Metropolitano de
+                            Caracas</p>
+                    </div>
+                </div>
+
+                <!-- 03 -->
+                <div class="bg-[#ebebeb] mb-12 shadow-md grid md:grid-cols-[80px_1fr_200px]">
+                    <a class="flex justify-center md:items-center py-4 lg:py-0 lg:pl-3" href="#" id="seccion_02">
+                        <div class="">
+                            <img src="./assets/icon down.svg" alt="flecha hacia bajo" class="">
+                        </div>
+                    </a>
+
+                    <!-- !realizar el boton para que aparezca en movil -->
+
+                    <div class="pt-8 bg-white md:py-4 bg-calendar hidden md:block">
+                        <div class="md:flex md:px-4 md:items-center lg:justify-evenly lg:px-0">
+                            <div class="flex justify-center items-center gap-5">
+                                <div class="">
+                                    <div class="w-12 mb-2 md:w-10 lg:w-12">
+                                        <img src="./assets/DeportivoLara.png" alt="escudo del equipo de Lara"
+                                            class="w-full">
+                                    </div>
+
+                                    <p class="text-[#495057] text-xs uppercase">Deportivo Lara</p>
+                                </div>
+
+                                <p class="text-[#495057]">VS</p>
+
+                                <div class="">
+                                    <div class="w-16 mb-2 md:w-14 lg:w-16">
+                                        <img src="./assets/Aragua.png" alt="escudo del equipo de Aragua" class="w-full">
+                                    </div>
+
+                                    <p class="text-[#495057] text-xs uppercase">Aragua Fc</p>
+                                </div>
+                            </div>
+
+                            <div class="mt-7 md:mt-0">
+                                <p class="uppercase text-sm font-semibold text-[#495057] md:text-xs lg:text-sm">copa
+                                    nacional -
+                                    clasificatoria
+                                </p>
+                                <p class="uppercase text-xl font-semibold text-[#495057] md:text-base lg:text-xl">29
+                                    agosto 2022 /
+                                    2:30pm</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-[#ebebeb] mt-5 md:hidden">
+                            <div class="py-5">
+                                <p class="uppercase text-xs font-semibold text-[#495057] mb-2">lugar</p>
+                                <p class="text-lg font-semibold text-[#495057] leading-5">Estadio <br> Metropolitano de
+                                    Lara
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-5 hidden md:block lg:pr-4">
+                        <p class="uppercase text-xs font-semibold text-[#495057] mb-2">lugar</p>
+                        <p class="text-lg font-semibold text-[#495057] leading-5">Estadio <br> Metropolitano de Lara</p>
+                    </div>
+                </div>
+
+                <!-- 04 -->
+                <div class="bg-[#ebebeb] shadow-md grid md:grid-cols-[80px_1fr_200px]">
+                    <a class="flex justify-center md:items-center py-4 lg:py-0 lg:pl-3" href="#" id="seccion_02">
+                        <div class="">
+                            <img src="./assets/icon down.svg" alt="flecha hacia bajo" class="">
+                        </div>
+                    </a>
+
+                    <!-- !realizar el boton para que aparezca en movil -->
+
+                    <div class="pt-8 bg-white md:py-4 bg-calendar hidden md:block">
+                        <div class="md:flex md:px-4 md:items-center lg:justify-evenly lg:px-0">
+                            <div class="flex justify-center items-center gap-5">
+                                <div class="">
+                                    <div class="w-12 mb-2 md:w-10 lg:w-14">
+                                        <img src="./assets/DeportivoLaGuaira.png" alt="escudo del equipo de la Guaira"
+                                            class="w-full">
+                                    </div>
+
+                                    <p class="text-[#495057] text-xs uppercase">Deportivo la guaira</p>
+                                </div>
+
+                                <p class="text-[#495057]">VS</p>
+
+                                <div class="">
+                                    <div class="w-16 mb-2 md:w-14">
+                                        <img src="./assets/DeportivoTachira.png"
+                                            alt="escudo del equipo deportivo tachira" class="w-full">
+                                    </div>
+
+                                    <p class="text-[#495057] text-xs uppercase">Deportivo Tachira</p>
+                                </div>
+                            </div>
+
+                            <div class="mt-7 md:mt-0">
+                                <p class="uppercase text-sm font-semibold text-[#495057] md:text-xs lg:text-sm">copa
+                                    nacional -
+                                    clasificatoria
+                                </p>
+                                <p class="uppercase text-xl font-semibold text-[#495057] md:text-base lg:text-xl">01
+                                    septiembre 2022 /
+                                    6:00pm</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-[#ebebeb] mt-5 md:hidden">
+                            <div class="py-5">
+                                <p class="uppercase text-xs font-semibold text-[#495057] mb-2">lugar</p>
+                                <p class="text-lg font-semibold text-[#495057] leading-5">Estadio Brígido Iriarte
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-5 hidden md:block lg:pr-4">
+                        <p class="uppercase text-xs font-semibold text-[#495057] mb-2">lugar</p>
+                        <p class="text-lg font-semibold text-[#495057] leading-5">Estadio Brígido Iriarte</p>
+                    </div>
+                </div>
             </center>
         </section>
 
