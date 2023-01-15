@@ -15,11 +15,336 @@
 
 </head>
 
-<body>
+<body class="scroll-smooth">
+    <header>
+        <nav class="bg-nav">
+            <div class="container px-10 md:px-0 mx-auto gap-20 lg:px-10 flex justify-between items-center">
+                <a href="#" class="inline-block w-40 py-5">
+                    <img src="./assets/Logo.png" alt="logo" class="">
+                </a>
+
+                <button
+                    class="cursor-pointer md:hidden hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-10 h-10 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                    </svg>
+                </button>
+
+                <ul class="list-none hidden md:flex md:gap-10">
+                    <li>
+                        <a href="#" class="text-white">Sobre nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white">Calendario 2022</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white">Galería</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white">Contactos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white">
+                            <span class="mr-2">Iniciar Sesión /</span>
+                            <span> Regístrarse</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- <nav class=" px-2 sm:px-4 py-1.5 sm:py-2 fixed w-full z-40 top-0 left-0 background-nv z-50">
+            <div class="container flex flex-wrap justify-between items-center mx-auto div-nv">
+                <a href="./index.html" class="flex p-2 items-center">
+                    <img src="./public/sources/images/Logo.png" class="mr-3 h-12 py-1 px-1" alt="Atletas Logo">
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 ml-3 text-sm text-white rounded-lg md:hidden hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Menú</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class=" flex flex-col p-4 mt-4 bg-[#141414] rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-[#141414] ">
+                        <li>
+                            <a href="#nosotros"
+                                class=" block py-2 pr-8 pl-7 font-medium text-white rounded hover:bg-transparent hover:text-blue-700 md:p-0 transition ease-in-out delay-150">Sobre
+                                nosotros</a>
+                        </li>
+                        <li>
+                            <a href="#galeria"
+                                class=" block py-2 pr-8 pl-7 font-medium text-white rounded hover:bg-transparent hover:text-blue-700 md:p-0 transition ease-in-out delay-150">Galería</a>
+                        </li>
+                        <li>
+                            <a href="#contacto"
+                                class=" block py-2 pr-8 pl-7 font-medium text-white rounded hover:bg-transparent hover:text-blue-700 md:p-0 transition ease-in-out delay-150 ">Contactos</a>
+                        </li>
+                        <li>
+                            <a href="./src/register-login/iniciar-sesion.html"
+                                class=" block py-2 pr-8 pl-7 font-medium text-white rounded hover:bg-gray-100 md:hover:text-blue-700 md:p-0 transition ease-in-out delay-150">Iniciar
+                                Sesión/Registrarse</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+
+        <!-- banner -->
+        <section><!-- *owl-container -->
+            <div class=""><!-- *owl-theme -->
+                <div class="hidden"><!-- *item 1 -->
+                    <div
+                        class="bg-center bg-cover bg-no-repeat bg-slider-1 h-screen w-full flex  md:justify-end md:items-end">
+                        <div class="md:pb-44">
+                            <h3
+                                class="lg:text-3xl md:pr-0 md:max-w-md  text-2xl text-white font-semibold pl-8 pr-10 max-w-xs pt-20">
+                                Yulimar Andrea Rojas Rodríguez es una atleta venezolana campeona olímpica en 2021 en
+                                triple
+                                salto
+                            </h3>
+
+                            <div class="translate-y-10 pl-8">
+                                <a href="#" class=" bg-[#F26F63] transition-colors focus:shadow-[#bd5e56]
+                                 hover:bg-[#bd5e56] px-6 py-3 rounded-md text-white tracking-wide">Ver más
+                                </a>
+                            </div>
+                        </div>
+                        <!-- <button class="bg-red-500">holas mundo</button> -->
+                    </div>
+                </div>
+
+                <div class="hidden"><!-- *item 2-->
+                    <div
+                        class="bg-center bg-cover bg-no-repeat bg-slider-2 h-screen w-full flex  md:justify-end md:items-end">
+                        <div class="md:pb-44 md:hidden lg:block">
+                            <h3 class="lg:text-[28px] lg:px-1 md:max-w-md sm:pl-4 sm:pr-8 text-2xl text-white font-semibold pl-6 pr-14
+                             pt-14">
+                                Los futbolistas venezolanos en diferentes ligas del mundo han contribuido a afianzar
+                                <br> el
+                                interés por el más universal <br> de los deportes.
+                            </h3>
+
+                            <div class="translate-y-10 pl-1">
+                                <a href="#" class=" bg-[#F26F63] transition-colors focus:shadow-[#bd5e56]
+                                 hover:bg-[#bd5e56] px-6 py-3 rounded-md text-white tracking-wide">Ver más
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden"><!-- *item 3 -->
+                    <div
+                        class="bg-center bg-cover bg-no-repeat bg-slider-3 h-screen w-full flex  md:justify-end md:items-end">
+                        <div class="md:pb-44">
+                            <h3
+                                class="lg:text-3xl md:pr-0 md:max-w-md  text-2xl text-white font-semibold pl-8 pr-10 max-w-xs pt-20">
+                                En 1925 se organiza en Caracas la divisa pionera del país, Ávila Tenis Club que
+                                funcionaba en el sector capitalino
+                            </h3>
+
+                            <div class="translate-y-10 pl-8">
+                                <a href="#" class=" bg-[#F26F63] transition-colors focus:shadow-[#bd5e56]
+                                 hover:bg-[#bd5e56] px-6 py-3 rounded-md text-white tracking-wide">Ver más
+                                </a>
+                            </div>
+                        </div>
+                        <!-- <button class="bg-red-500">holas mundo</button> -->
+                    </div>
+                </div>
+
+                <div class=""><!-- *item 4-->
+                    <div
+                        class="bg-center bg-cover bg-no-repeat bg-slider-4 h-screen w-full flex  md:justify-end md:items-end">
+                        <div class="md:pb-44">
+                            <h3
+                                class="lg:text-3xl md:pr-8 md:max-w-md  text-2xl text-white font-semibold pl-5 pr-10 max-w-xs pt-20">
+                                La natación es un deporte cuya competencia se centra en el tiempo, batir récords y
+                                distancias.
+                            </h3>
+
+                            <div class="translate-y-10 pl-8">
+                                <a href="#" class=" bg-[#F26F63] transition-colors focus:shadow-[#bd5e56]
+                                 hover:bg-[#bd5e56] px-6 py-3 rounded-md text-white tracking-wide">Ver más
+                                </a>
+                            </div>
+                        </div>
+                        <!-- <button class="bg-red-500">holas mundo</button> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <div class="h-screen justify-center mt-0 "
+            style="background: rgb(0,0,0); background: linear-gradient(120deg, rgba(255,204,0,1) 50%, rgba(0,0,0,1) 50%);">
+            <div class="mt-0 h-[99%] ">
+                <div id="default-carousel" class="relative h-full" data-carousel="static">
+                    Carousel wrapper
+                    <div class="mt-0 h-full">
+                        <div class="overflow-hidden relative w-full h-full ">
+                            Item 1
+                            <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10"
+                                data-carousel-item="active">
+                                <span
+                                    class="landscape-text lg:w-1/4 w-4/6 absolute lg:top-1/2 top-[28%] sm:top-[20%] left-1/2 sm:text-2xl text-xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 lg:left-[82%] text-justify z-30">Los
+                                    futbolistas venezolanos en diferentes ligas del mundo han contribuido a afianzar el
+                                    interés por el más universal de los deportes.</span>
+                                <div
+                                    class="absolute top-[75%] sm:top-2/3 lg:left-[63%] sm:left-3/4 xl:left-[70%] 2xl:left-[70%] left-1/3 z-30">
+                                    <button type="button"
+                                        class="lg:flex hidden text-sm px-8 py-2 font-medium text-center text-black bg-[#FFCC00] rounded-lg hover:bg-blue-800 hover:text-white transition focus:ring-4 focus:outline-none focus:ring-blue-300">Ver
+                                        más</button>
+                                </div>
+                                <img src="./assets/Slider1-mobile.png"
+                                    class="landscape-carousel lg:block hidden absolute top-1/2 left-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2"
+                                    alt="...">
+                                <img src="./assets/BANNER2.jpg"
+                                    class="landscape-carousel-hidden lg:hidden block absolute top-1/2 left-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2"
+                                    alt="...">
+                            </div>
+                            Item 2
+                            <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
+                                data-carousel-item="1">
+                                <span
+                                    class="landscape-text lg:w-1/4 w-4/6 absolute lg:top-1/2 top-[28%] sm:top-[20%] left-1/2 sm:text-2xl text-xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 lg:left-[82%] text-justify z-30">Yulimar
+                                    Andrea Rojas Rodríguez es una atleta venezolana campeona olímpica en 2021 en triple
+                                    salto</span>
+                                <div
+                                    class="absolute top-[75%] sm:top-2/3 lg:left-[63%] sm:left-3/4 xl:left-[70%] 2xl:left-[70%] left-1/3 z-30">
+                                    <button type="button"
+                                        class="lg:flex hidden text-sm px-8 py-2 font-medium text-center text-white bg-[#EF6D5D] rounded-lg hover:bg-white hover:text-[#EF6D5D] transition focus:ring-4 focus:outline-none focus:ring-blue-300">Ver
+                                        más</button>
+                                </div>
+                                <img src="./Atletas de Venezuela_files/BANNER 2.jpg"
+                                    class="landscape-carousel lg:block hidden absolute top-1/2 left-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2"
+                                    alt="...">
+                                <img src="./Atletas de Venezuela_files/MOVIL 1.jpg"
+                                    class="landscape-carousel-hidden lg:hidden block absolute top-1/2 left-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2"
+                                    alt="...">
+                            </div>
+                            Item 3
+                            <div class="duration-700 ease-in-out absolute inset-0 transition-all transform z-10 translate-x-full"
+                                data-carousel-item="2">
+                                <span
+                                    class="landscape-text lg:w-1/4 w-4/6 absolute lg:top-1/2 top-[28%] sm:top-[20%] left-1/2 sm:text-2xl text-xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 lg:left-[82%] text-justify z-30">En
+                                    1925 se organiza en Caracas la divisa pionera del país, el Ávila Tenis Club que
+                                    funcionaba en el sector capitalino</span>
+                                <div
+                                    class="absolute top-[75%] sm:top-2/3 lg:left-[63%] sm:left-3/4 xl:left-[70%] 2xl:left-[70%] left-1/3 z-30">
+                                    <button type="button"
+                                        class="lg:flex hidden text-sm px-8 py-2 font-medium text-center text-black bg-[#FFCC00] rounded-lg hover:bg-blue-800 hover:text-white transition focus:ring-4 focus:outline-none focus:ring-blue-300">Ver
+                                        más</button>
+                                </div>
+                                <img src="./Atletas de Venezuela_files/BANNER 3.jpg"
+                                    class="landscape-carousel lg:block hidden absolute top-1/2 left-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2"
+                                    alt="...">
+                                <img src="./Atletas de Venezuela_files/MOVIL 3.jpg"
+                                    class="landscape-carousel-hidden lg:hidden block absolute top-1/2 left-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2"
+                                    alt="...">
+                            </div>
+                            Item 4
+                            <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10 hidden"
+                                data-carousel-item="3">
+                                <span
+                                    class="landscape-text lg:w-1/4 w-4/6 absolute lg:top-1/2 top-[28%] sm:top-[20%] left-1/2 sm:text-2xl text-xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 lg:left-[82%] text-justify z-30">La
+                                    natación es un deporte cuya competencia se centra en el tiempo, batir récords y
+                                    distancias</span>
+                                <div
+                                    class="absolute top-[75%] sm:top-2/3 lg:left-[63%] sm:left-3/4 xl:left-[70%] 2xl:left-[70%] left-1/3 z-30">
+                                    <button type="button"
+                                        class="lg:flex hidden text-sm px-8 py-2 font-medium text-center text-white bg-[#EF6D5D] rounded-lg hover:bg-white hover:text-[#EF6D5D] transition focus:ring-4 focus:outline-none focus:ring-blue-300">Ver
+                                        más</button>
+                                </div>
+                                <img src="./Atletas de Venezuela_files/BANNER 4.jpg"
+                                    class="landscape-carousel lg:block hidden absolute top-1/2 left-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2"
+                                    alt="...">
+                                <img src="./Atletas de Venezuela_files/MOVIL 4.jpg"
+                                    class="landscape-carousel-hidden lg:hidden block absolute top-1/2 left-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2"
+                                    alt="...">
+                            </div>
+                        </div>
+                        Slider indicators
+                        <div class="flex absolute bottom-5 left-1/2 sm:left-1/4 z-30 space-x-3 -translate-x-1/2">
+                            <button type="button"
+                                class="w-2 h-2 bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+                                aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                            <button type="button" class="w-2 h-2 bg-white dark:bg-gray-800" aria-current="true"
+                                aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                            <button type="button"
+                                class="w-2 h-2 bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+                                aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                            <button type="button"
+                                class="w-2 h-2 bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+                                aria-current="false" aria-label="Slide 3" data-carousel-slide-to="3"></button>
+                        </div>
+
+                        Slider controls
+                        <button type="button"
+                            class="flex absolute top-0 left-0 z-30 justify-center items-center px-0 h-full cursor-pointer group focus:outline-none"
+                            data-carousel-prev="">
+                            <span
+                                class=" banner-indicator-l inline-flex justify-center items-center w-12 h-8 sm:w-12 sm:h-10">
+                                <div class="h-4 w-5"> <svg enable-background="new 0 0 32 32" id="svg2" version="1.1"
+                                        viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:cc="http://creativecommons.org/ns#"
+                                        xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                        xmlns:svg="http://www.w3.org/2000/svg">
+                                        <g id="background">
+                                            <rect fill="none" height="32" width="32" id="id_101"></rect>
+                                        </g>
+                                        <g id="arrow_x5F_left">
+                                            <polygon points="22,2.001 8,16 22,30  " id="id_102"
+                                                style="fill: rgb(255, 255, 255);"></polygon>
+                                        </g>
+                                    </svg></div>
+                                <span class="sr-only">Anterior</span>
+                            </span>
+                        </button>
+                        <button type="button"
+                            class="flex absolute top-0 right-0 z-30 justify-center items-center px-0 h-full cursor-pointer group focus:outline-none"
+                            data-carousel-next="">
+                            <span
+                                class="banner-indicator-r inline-flex justify-center items-center w-12 h-8 sm:w-12 sm:h-10">
+                                <div class="h-4 w-5"> <svg enable-background="new 0 0 32 32" id="svg2" version="1.1"
+                                        viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:cc="http://creativecommons.org/ns#"
+                                        xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                        xmlns:svg="http://www.w3.org/2000/svg">
+                                        <g id="background">
+                                            <rect fill="none" height="32" width="32" id="id_101"></rect>
+                                        </g>
+                                        <g id="arrow_x5F_right">
+                                            <polygon points="10,2.001 24,16 10,30  " id="id_102"
+                                                style="fill: rgb(255, 255, 255);"></polygon>
+                                        </g>
+                                    </svg></div>
+                                <span class="sr-only">Siguiente</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </header>
+
     <main class="bg-[#F7F7F7]">
 
         <!-- !sobre nosotros solo faltan las rayas -->
-        <section class="container px-6 lg:px-4 mx-auto pt-28">
+        <section class="container px-10 lg:px-4- mx-auto pt-28">
             <div class="lg:flex ">
                 <div class="lg:w-2/4">
                     <div class="grid grid-rows-2 grid-flow-col gap-7">
@@ -103,7 +428,7 @@
 
         <!-- calendario -->
         <!-- !acomodar -->
-        <section class="container px-6 lg:px-5 mx-auto mt-14 lg:mt-0">
+        <section class="container px-10 lg:px-5- mx-auto mt-14 lg:mt-0">
             <center class="lg:px-2">
                 <h2 class="capitalize text-5xl text-slate-800 mb-4">calendario 2022/23</h2>
                 <h6 class="text-3xl text-slate-800 mb-6">Filtro según deporte</h6>
@@ -209,7 +534,7 @@
         </section>
 
         <!-- galeria -->
-        <section class="container px-6 lg:px-4 mx-auto mt-24">
+        <section class="container px-10 lg:px-4- mx-auto mt-24">
 
             <h2 class="text-5xl text-slate-800 mb-12 text-center">Galería de imágenes</h2>
 
@@ -255,14 +580,13 @@
             </div>
         </section>
 
-
         <!-- formulario -->
         <section class="bg-linear-gradient-yellow py-4 mt-24">
-            <div class="container px-6 lg:px-4 mx-auto">
+            <div class="container px-10 lg:px-4- mx-auto">
                 <h2 class="capitalize text-5xl text-slate-800 text-center font-bold">contacto</h2>
         </section>
 
-        <div class="container px-6 lg:px-4 mx-auto mt-20">
+        <div class="container px-10 lg:px-4- mx-auto mt-20">
             <div class="md:flex md:items-center md:gap-8">
                 <div class="mb-16 md:w-1/2">
                     <h2 class="uppercase text-2xl text-slate-800 text-center font-bold">¿preguntas? ¿sugerencias?</h2>
@@ -299,7 +623,8 @@
 
                         <div class="flex gap-7">
                             <div class="w-1/2 mb-6">
-                                <label for="emails" class="cursor-pointer text-[#6a7075] block mb-2">Correo
+                                <label for="emails"
+                                    class="cursor-pointer whitespace-nowrap text-[#6a7075] block mb-2">Correo
                                     electrónico <span class="text-red-600">*</span></label>
                                 <input type="email" name="Correo electronico" id="emails"
                                     placeholder="Correo electronico"
@@ -350,7 +675,7 @@
         </div>
 
         <!-- slider -->
-        <div class="pt-24 pb-24 px-6 lg:px-14"><!-- owl.container -->
+        <div class="pt-24 pb-24 px-10 lg:px-14-"><!-- owl.container -->
             <div class=""> <!-- owl.theme -->
                 <div class="item flex justify-center grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3">
                     <div class="w-16 h-16">
@@ -383,7 +708,7 @@
     </main>
 
     <footer class="bg-linear-gradient-yellow-revers">
-        <div class="container px-6 lg:px-4 mx-auto  py-3">
+        <div class="container px-10 lg:px-4- mx-auto  py-3">
             <div class="flex justify-between">
                 <p class="uppercase hidden lg:block">Noticia de última hora</p>
                 <p class="capitalize hidden lg:block">copyright © 2022. Reservados todos los derechos</p>
